@@ -2470,14 +2470,25 @@
     loglevel-plugin-prefix "^0.8.4"
     strip-ansi "^6.0.0"
 
-"@wdio/mocha-framework@^6.5.0":
-  version "6.10.11"
-  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-6.10.11.tgz#86539aecb3d3b4ce6e94238cc8def46b5803b041"
-  integrity sha512-LW8WWrmBynKAHwUoFj3odzH92db5oBfAXXRVCuz8uWKrRGzH1zR2QI7D3bRX4tJBE2xq3KCQ3DW7xEdCuZHgtQ==
+"@wdio/logger@7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-7.0.0.tgz#d2e7a595b3daf1285da29571cc0fd7cfcc3c1a68"
+  integrity sha512-P3inCmtc0ms1vnx3v25+U6ccD2dkiuBhaJwmIWPwSbQn8cNQ5AcQIbRWMbnzFHbJ/jSrVBnlwmUArW7L02Zpeg==
+  dependencies:
+    chalk "^4.0.0"
+    loglevel "^1.6.0"
+    loglevel-plugin-prefix "^0.8.4"
+    strip-ansi "^6.0.0"
+
+"@wdio/mocha-framework@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-7.0.0.tgz#85c7ef72aaa1bcb878a276c141c27d438ee4d913"
+  integrity sha512-pvONNTv8wDyjySzCf4qgdCGzg+AHzQ0LwbObJB8W/8R62lsm+XkP2jv6dcvTDQh/u9u+RJEEBXDtZnNcOai1XA==
   dependencies:
     "@types/mocha" "^8.0.0"
-    "@wdio/logger" "6.10.10"
-    "@wdio/utils" "6.10.11"
+    "@wdio/logger" "7.0.0"
+    "@wdio/types" "7.0.0"
+    "@wdio/utils" "7.0.0"
     expect-webdriverio "^1.1.5"
     mocha "^8.0.1"
 
@@ -2534,12 +2545,27 @@
     "@wdio/logger" "6.10.10"
     fibers "^4.0.1"
 
+"@wdio/types@7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@wdio/types/-/types-7.0.0.tgz#cb21b3894fffa44e5fa7379e31e19506d2ba00b7"
+  integrity sha512-DhNmKKF26MIjlUndmH5IsnnmxZEpGQvOpTsANPagadO0D8KePUoItG9Jxx3enxQ7f3YDQuRSXh/thDkp3nJujg==
+  dependencies:
+    got "^11.8.1"
+
 "@wdio/utils@6.10.11":
   version "6.10.11"
   resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.10.11.tgz#4cdbedcf30d53fbeb97699d7cbe3d9d1be6c443f"
   integrity sha512-x4yc08UWPvP1j7sPKt4Wwyd+z85pVaSYZ+6iyodbXpflCo9uxnQgSmLdDnGDxksREeBVkndsBqhdJHsuI8eWsw==
   dependencies:
     "@wdio/logger" "6.10.10"
+
+"@wdio/utils@7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-7.0.0.tgz#bd0cd76655bfff550477baa9bfe1c102ad053b0b"
+  integrity sha512-Bj6DVhjsSWgoazSithUUVrAyF3blZgOWpjgNqVqWVIVO1QhJLFrpArLIfOiNgPrLI8Klsqr7RlPJpc1KzqbHCA==
+  dependencies:
+    "@wdio/logger" "7.0.0"
+    "@wdio/types" "7.0.0"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -6270,7 +6296,7 @@ good-listener@^1.2.2:
   dependencies:
     delegate "^3.1.2"
 
-got@^11.0.2:
+got@^11.0.2, got@^11.8.1:
   version "11.8.1"
   resolved "https://registry.yarnpkg.com/got/-/got-11.8.1.tgz#df04adfaf2e782babb3daabc79139feec2f7e85d"
   integrity sha512-9aYdZL+6nHmvJwHALLwKSUZ0hMwGaJGYv3hoPLPgnT8BoBXm1SjnZeky+91tfwJaDzun2s4RsBRy48IEYv2q2Q==
