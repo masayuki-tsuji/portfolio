@@ -9,7 +9,7 @@
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
-    "lint": "yarn lint:js --fix && yarn lint:style --fix",
+    "lint": "npm run lint:js --fix && npm rnu lint:style --fix",
     "test:e2e": "wdio wdio.conf.js"
   },
   "dependencies": {
@@ -22,7 +22,7 @@
     "@nuxtjs/pwa": "^3.0.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6",
+    "nuxt": "^2.15.3",
     "nuxt-webfontloader": "^1.1.0"
   },
   "devDependencies": {
