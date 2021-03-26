@@ -17,7 +17,7 @@
     />
     <sns-icon
       class="sns-menu-item"
-      href="https://github.com/masayuki0220"
+      href="https://github.com/masayuki-tsuji"
       src="/images/sns/github.png"
     />
   </div>
