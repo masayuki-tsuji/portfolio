@@ -1,5 +1,7 @@
 # portfolio
 
+![](https://github.com/masayuki-tsuji/portfolio/workflows/Node.js%20CI/badge.svg)
+
 ## Build Setup
 
 ```bash
