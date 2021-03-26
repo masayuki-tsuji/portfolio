@@ -9,7 +9,7 @@
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
-    "lint": "yarn lint:js --fix && yarn lint:style --fix",
+    "lint": "npm run lint:js --fix && npm rnu lint:style --fix",
     "test:e2e": "wdio wdio.conf.js"
   },
   "dependencies": {
