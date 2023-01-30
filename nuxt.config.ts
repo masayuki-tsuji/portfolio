@@ -1,1 +1,3 @@
-export default defineNuxtConfig({});
+export default defineNuxtConfig({
+  css: ["~/assets/scss/global.scss"],
+});
