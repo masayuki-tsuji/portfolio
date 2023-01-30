@@ -87,7 +87,7 @@ const works: Work[] = [
 </script>
 
 <template>
-  <TemplatesPortfolio title="Works" icon="briefcase">
+  <TemplatesPortfolio title="Works" icon="work">
     <div class="s-works">
       <MoleculesWorkItem
         v-for="(work, index) in works"

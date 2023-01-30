@@ -3,7 +3,7 @@ useHead({ title: "About" })
 </script>
 
 <template>
-  <TemplatesPortfolio title="About" icon="user">
+  <TemplatesPortfolio title="About" icon="person">
     <div class="s-about">
       <div class="profile">
         <div class="name-group">

@@ -16,7 +16,7 @@ withDefaults(defineProps<Props>(), {
     <OrganismsHeaderSp class="portfolio-header-sp is-mobile" />
     <div class="portfolio-content">
       <div class="title-wrapper">
-        <v-icon :icon="icon" class="icon fa-fw" />
+        <span class="icon material-symbols-outlined">{{ icon }}</span>
         <h1 class="title">{{ title }}</h1>
       </div>
       <slot></slot>
@@ -57,7 +57,7 @@ $content-padding: 20px;
       align-items: center;
       color: $color-site;
       .icon {
-        font-size: 28px;
+        font-size: 2rem;
         margin-right: 5px;
       }
     }

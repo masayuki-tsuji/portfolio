@@ -3,7 +3,7 @@ useHead({ title: "Contact", script: [{ src: 'https://sdk.form.run/js/v2/embed.js
 </script>
 
 <template>
-  <TemplatesPortfolio title="Contact" icon="envelope">
+  <TemplatesPortfolio title="Contact" icon="mail">
     <div
       class="formrun-embed"
       data-formrun-form="@tu-kun-irad"

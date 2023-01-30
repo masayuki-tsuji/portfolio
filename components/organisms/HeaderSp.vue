@@ -3,14 +3,14 @@
     <div class="header-sp">
       <input id="nav" type="checkbox" style="display: none" />
       <label class="bars-wrapper" for="nav">
-        <v-icon icon="bars" />
+        <span class="material-symbols-outlined">menu</span>
       </label>
       <span class="title">Masayuki Tsuji's Portfolio</span>
       <label id="nav-close" for="nav"></label>
       <div id="content">
         <div class="content-wrapper">
           <label class="nav-close-icon" for="nav">
-            <v-icon icon="times" />
+            <span class="material-symbols-outlined">close</span>
           </label>
           <div class="logo-wrapper">
             <NuxtLink to="/" class="icon-link">
@@ -32,6 +32,8 @@
   height: 100%;
   align-items: center;
   .bars-wrapper {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     margin-right: auto;
     margin-left: 15px;
@@ -63,6 +65,7 @@
         margin-top: 5px;
         margin-right: 20px;
         margin-left: auto;
+        color: $color-base;
       }
       .logo-wrapper {
         padding: 0 50px;

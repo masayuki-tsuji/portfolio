@@ -6,9 +6,9 @@ type Menu = {
 }
 
 const menus: Menu[] = [
-  { text: 'About', icon: 'user', to: '/' },
-  { text: 'Works', icon: 'briefcase', to: '/works' },
-  { text: 'Contact', icon: 'envelope', to: '/contact' },
+  { text: 'About', icon: 'person', to: '/' },
+  { text: 'Works', icon: 'work', to: '/works' },
+  { text: 'Contact', icon: 'mail', to: '/contact' },
 ]
 
 </script>
