@@ -1,3 +1,18 @@
+<script setup lang="ts">
+type Menu = {
+  text: string
+  icon: string
+  to: string
+}
+
+const menus: Menu[] = [
+  { text: 'About', icon: 'user', to: '/' },
+  { text: 'Works', icon: 'briefcase', to: '/works' },
+  { text: 'Contact', icon: 'envelope', to: '/contact' },
+]
+
+</script>
+
 <template>
   <nav class="header-menu">
     <div class="header-menu-title">Menu</div>
@@ -8,44 +23,13 @@
         class="header-menu-list"
         :class="{ selected: $route.path === menu.to }"
       >
-        <header-menu-item class="item" :icon="menu.icon" :to="menu.to">{{
+        <MoleculesHeaderMenuItem class="item" :icon="menu.icon" :to="menu.to">{{
           menu.text
-        }}</header-menu-item>
+        }}</MoleculesHeaderMenuItem>
       </li>
     </ul>
   </nav>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-import HeaderMenuItem from '@/components/molecules/HeaderMenuItem.vue'
-
-type DataType = {
-  menus: {
-    text: string
-    icon: string
-    to: string
-  }[]
-}
-
-export default Vue.extend({
-  components: {
-    HeaderMenuItem,
-  },
-  data(): DataType {
-    return {
-      menus: [
-        { text: 'About', icon: 'user', to: '/' },
-        { text: 'Works', icon: 'briefcase', to: '/works' },
-        { text: 'Contact', icon: 'envelope', to: '/contact' },
-      ],
-    }
-  },
-  mounted() {
-    console.log(this.$route.path)
-  },
-})
-</script>
 
 <style lang="scss" scoped>
 @import '@/assets/scss/variables';

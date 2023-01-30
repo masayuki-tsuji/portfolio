@@ -1,7 +1,19 @@
+<script setup lang="ts">
+interface Props {
+  title: string
+  icon: string
+}
+
+withDefaults(defineProps<Props>(), {
+  title: "",
+  icon: ""
+})
+</script>
+
 <template>
   <div class="portfolio">
-    <header-pc class="portfolio-header-pc is-pc" />
-    <header-sp class="portfolio-header-sp is-mobile" />
+    <OrganismsHeaderPc class="portfolio-header-pc is-pc" />
+    <OrganismsHeaderSp class="portfolio-header-sp is-mobile" />
     <div class="portfolio-content">
       <div class="title-wrapper">
         <v-icon :icon="icon" class="icon fa-fw" />
@@ -11,28 +23,6 @@
     </div>
   </div>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-import HeaderPc from '@/components/organisms/HeaderPc.vue'
-import HeaderSp from '@/components/organisms/HeaderSp.vue'
-export default Vue.extend({
-  components: {
-    HeaderPc,
-    HeaderSp,
-  },
-  props: {
-    title: {
-      type: String,
-      default: '',
-    },
-    icon: {
-      type: String,
-      default: '',
-    },
-  },
-})
-</script>
 
 <style lang="scss" scoped>
 @import '@/assets/scss/variables';

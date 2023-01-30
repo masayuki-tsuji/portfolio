@@ -1,3 +1,7 @@
+<script setup>
+defineProps({ src: String, href: String })
+</script>
+
 <template>
   <a
     :href="href"
@@ -8,22 +12,6 @@
     <img :src="src" class="sns-icon" alt="sns icon" lazy />
   </a>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  props: {
-    src: {
-      type: String,
-      required: true,
-    },
-    href: {
-      type: String,
-      required: true,
-    },
-  },
-})
-</script>
 
 <style lang="scss" scoped>
 @import '@/assets/scss/variables';

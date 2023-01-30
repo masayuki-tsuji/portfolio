@@ -1,13 +1,17 @@
+<script setup lang="ts">
+useHead({ title: "About" })
+</script>
+
 <template>
-  <portfolio title="About" icon="user">
+  <TemplatesPortfolio title="About" icon="user">
     <div class="s-about">
       <div class="profile">
         <div class="name-group">
           <div class="title">CTO/Web Engineer</div>
           <span class="name">Masayuki Tsuji</span>
         </div>
-        <user-icon class="image" src="/images/profile_main.jpg" />
-        <sns-menu class="sns is-mobile" />
+        <AtomsUserIcon class="image" src="/images/profile_main.jpg" />
+        <OrganismsSnsMenu class="sns is-mobile" />
       </div>
       <div class="overview">
         <p>
@@ -30,28 +34,8 @@
         </p>
       </div>
     </div>
-  </portfolio>
+  </TemplatesPortfolio>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-import UserIcon from '@/components/atoms/UserIcon.vue'
-import Portfolio from '@/components/templates/Portfolio.vue'
-import SnsMenu from '@/components//organisms/SnsMenu.vue'
-
-export default Vue.extend({
-  components: {
-    UserIcon,
-    Portfolio,
-    SnsMenu,
-  },
-  head() {
-    return {
-      title: 'About',
-    }
-  },
-})
-</script>
 
 <style lang="scss" scoped>
 @import '@/assets/scss/variables';
