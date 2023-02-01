@@ -74,4 +74,9 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/scss/global.scss"],
+  runtimeConfig: {
+    public: {
+      googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID,
+    },
+  },
 });
