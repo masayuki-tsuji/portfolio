@@ -1,5 +1,11 @@
 <script setup lang="ts">
-useHead({ title: "Contact", script: [{ src: 'https://sdk.form.run/js/v2/embed.js' }] })
+useHead({
+  title: "Contact",
+  script: [{ src: 'https://sdk.form.run/js/v2/embed.js' }],
+  meta: [
+    { name: "robots", content: "none" }
+  ]
+})
 </script>
 
 <template>
