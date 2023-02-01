@@ -19,7 +19,7 @@ phases:
     commands:
       - npm
       - npm run generate
-      - aws s3 sync dist $S3_BUCKET_PATH --delete
+      - aws s3 sync .output/public $S3_BUCKET_PATH --delete
   post_build:
     commands:
       - echo Build Completed on `date`
