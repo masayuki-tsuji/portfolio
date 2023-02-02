@@ -1,6 +1,7 @@
 # portfolio
 
 ![](https://github.com/masayuki-tsuji/portfolio/workflows/Node.js%20CI/badge.svg)
+![](https://codebuild.ap-northeast-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiL1JjYiszTnJMUUhhcFpkckZ3SGc5eEN2S0dSRTQvelhzT2JaUTlPQjQrc0VBd2duc1N5NktnaXZadE05clFVbGlyOGJvTlNZNmVDby9uWFZFSWxESlpFPSIsIml2UGFyYW1ldGVyU3BlYyI6InVLa1M5dHpNNG1aQ3djQy8iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
 
 ## Build Setup
 
