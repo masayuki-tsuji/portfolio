@@ -3,38 +3,27 @@
     <div class="header-sp">
       <input id="nav" type="checkbox" style="display: none" />
       <label class="bars-wrapper" for="nav">
-        <v-icon icon="bars" />
+        <span class="material-symbols-outlined">menu</span>
       </label>
       <span class="title">Masayuki Tsuji's Portfolio</span>
       <label id="nav-close" for="nav"></label>
       <div id="content">
         <div class="content-wrapper">
           <label class="nav-close-icon" for="nav">
-            <v-icon icon="times" />
+            <span class="material-symbols-outlined">close</span>
           </label>
           <div class="logo-wrapper">
-            <nuxt-link to="/" class="icon-link">
-              <root-icon class="icon" src="/images/logo.jpg" />
-            </nuxt-link>
+            <NuxtLink to="/" class="icon-link">
+              <AtomsRootIcon class="icon" src="/images/logo.jpg" />
+            </NuxtLink>
           </div>
-          <header-menu class="menu" />
-          <sns-menu class="sns" />
+          <OrganismsHeaderMenu class="menu" />
+          <OrganismsSnsMenu class="sns" />
         </div>
       </div>
     </div>
   </header>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-import RootIcon from '@/components//atoms/RootIcon.vue'
-import HeaderMenu from '@/components/organisms/HeaderMenu.vue'
-import SnsMenu from '@/components//organisms/SnsMenu.vue'
-
-export default Vue.extend({
-  components: { RootIcon, HeaderMenu, SnsMenu },
-})
-</script>
 
 <style lang="scss" scoped>
 @import '@/assets/scss/variables';
@@ -43,6 +32,8 @@ export default Vue.extend({
   height: 100%;
   align-items: center;
   .bars-wrapper {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     margin-right: auto;
     margin-left: 15px;
@@ -74,6 +65,7 @@ export default Vue.extend({
         margin-top: 5px;
         margin-right: 20px;
         margin-left: auto;
+        color: $color-base;
       }
       .logo-wrapper {
         padding: 0 50px;

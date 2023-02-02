@@ -1,3 +1,21 @@
+<script setup lang="ts">
+interface Props {
+  image: string
+  title: string
+  overviews: string[]
+  reverse: boolean
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  image: "",
+  title: "",
+  overviews: () => [],
+  reverse: false
+})
+
+const displayOverview = computed(() => props.overviews.join("\n"))
+</script>
+
 <template>
   <div class="work-item" :class="{ reverse: reverse }">
     <img class="image" :src="image" alt="work image" lazy />
@@ -8,34 +26,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue, { PropType } from 'vue'
-export default Vue.extend({
-  props: {
-    image: {
-      type: String,
-      default: '',
-    },
-    title: {
-      type: String,
-      default: '',
-    },
-    overviews: {
-      type: Array as PropType<String[]>,
-      default: () => [],
-    },
-    reverse: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  computed: {
-    displayOverview(): string {
-      return this.overviews.join('\n')
-    },
-  },
-})
-</script>
 
 <style lang="scss" scoped>
 @import '@/assets/scss/variables';

@@ -1,38 +1,28 @@
+<script setup lang="ts">
+interface Props {
+  title: string
+  icon: string
+}
+
+withDefaults(defineProps<Props>(), {
+  title: "",
+  icon: ""
+})
+</script>
+
 <template>
   <div class="portfolio">
-    <header-pc class="portfolio-header-pc is-pc" />
-    <header-sp class="portfolio-header-sp is-mobile" />
+    <OrganismsHeaderPc class="portfolio-header-pc is-pc" />
+    <OrganismsHeaderSp class="portfolio-header-sp is-mobile" />
     <div class="portfolio-content">
       <div class="title-wrapper">
-        <v-icon :icon="icon" class="icon fa-fw" />
+        <span class="icon material-symbols-outlined">{{ icon }}</span>
         <h1 class="title">{{ title }}</h1>
       </div>
       <slot></slot>
     </div>
   </div>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-import HeaderPc from '@/components/organisms/HeaderPc.vue'
-import HeaderSp from '@/components/organisms/HeaderSp.vue'
-export default Vue.extend({
-  components: {
-    HeaderPc,
-    HeaderSp,
-  },
-  props: {
-    title: {
-      type: String,
-      default: '',
-    },
-    icon: {
-      type: String,
-      default: '',
-    },
-  },
-})
-</script>
 
 <style lang="scss" scoped>
 @import '@/assets/scss/variables';
@@ -67,7 +57,7 @@ $content-padding: 20px;
       align-items: center;
       color: $color-site;
       .icon {
-        font-size: 28px;
+        font-size: 2rem;
         margin-right: 5px;
       }
     }
